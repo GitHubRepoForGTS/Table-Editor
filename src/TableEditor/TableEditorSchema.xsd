@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.ibm.ca/TableEditorSchema"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.ibm.ca/TableEditorSchema">
+
+    <element name="tables" type="string"></element>
+
+    <attribute name="name" type="string"></attribute>
+
+    <element name="table" type="string"></element>
+</schema>

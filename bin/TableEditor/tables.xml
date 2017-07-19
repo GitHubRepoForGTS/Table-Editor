@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+	<table name = "QBIS.BP_CUSTNUM">
+		<column required="Y" pkey="Y">
+		    <title name="CUSTNUM" />
+		    <db2column name="CUSTNUM" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string01"></mapvo>
+		</column>
+	  	<column>
+		    <title name="BP_FLAG" />
+		    <db2column name="BP_FLAG" />
+		    <datatype name="String" isBool="Y" maxLength="3"/>
+		    <mapvo name="string02"></mapvo>
+	  	</column> 
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string03"></mapvo>
+	  	</column>     	
+	</table>
+	<table name = "QBIS.GC_NAT">
+		<column required="Y" pkey="Y">
+		    <title name="NAT" />
+		    <db2column name="NAT" />
+		    <datatype name="String" maxLength="4" ></datatype>
+		    <mapvo name="string01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="GC_NAT_FLAG" />
+		    <db2column name="GC_NAT_FLAG" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string02"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="SDC_OWNER" />
+		    <db2column name="SDC_OWNER" />
+		    <datatype name="String" maxLength="50" />
+		    <mapvo name="string03"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="SDC_PRICER" />
+		    <db2column name="SDC_PRICER" />
+		    <datatype name="String" maxLength="50" />
+		    <mapvo name="string04"></mapvo>
+	  	</column>  	
+	  	<column>
+		    <title name="GC_OWNER" />
+		    <db2column name="GC_OWNER" />
+		    <datatype name="String" maxLength="50" />
+		    <mapvo name="string05"></mapvo>
+	  	</column> 
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string06"></mapvo>
+	  	</column>     	 
+	</table>
+	<table name = "QBIS.CA_INFO">
+		<column required="Y" pkey="Y">
+		    <title name="NAT" />
+		    <db2column name="NAT" />
+		    <datatype name="String" maxLength="4" ></datatype>
+		    <mapvo name="string01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="NAT_NAME" />
+		    <db2column name="NAT_NAME" />
+		    <datatype name="String" maxLength="4" />
+		    <mapvo name="string02"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="REGION" />
+		    <db2column name="REGION" />
+		    <datatype name="String" maxLength="20" />
+		    <mapvo name="string03"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="CA_NAME" />
+		    <db2column name="CA_NAME" />
+		    <datatype name="String" maxLength="40" />
+		    <mapvo name="string04"></mapvo>
+	  	</column>  	
+	  	<column>
+		    <title name="CA_MGR_NAME" />
+		    <db2column name="CA_MGR_NAME" />
+		    <datatype name="String" maxLength="40" />
+		    <mapvo name="string05"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string06"></mapvo>
+	  	</column>     	  
+	</table>
+	<table name = "QBIS.IBM_COM_INFO">
+		<column required="Y" pkey="Y">
+		    <title name="SBR" />
+		    <db2column name="SBR" />
+		    <datatype name="String" maxLength="4" ></datatype>
+		    <mapvo name="string01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="SALES_REP" />
+		    <db2column name="SALES_REP" />
+		    <datatype name="String" maxLength="40" />
+		    <mapvo name="string02"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="SALES_REP_MGR" />
+		    <db2column name="SALES_REP_MGR" />
+		    <datatype name="String" maxLength="40" />
+		    <mapvo name="string03"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="AREA_MGR" />
+		    <db2column name="AREA_MGR" />
+		    <datatype name="String" maxLength="40" />
+		    <mapvo name="string04"></mapvo>
+	  	</column>  	
+	  	<column>
+		    <title name="CASO_TEAM" />
+		    <db2column name="CASO_TEAM" />
+		    <datatype name="String" maxLength="20" />
+		    <mapvo name="string05"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="CASO_EMAIL_ID" />
+		    <db2column name="CASO_EMAIL_ID" />
+		    <datatype name="String" maxLength="50" />
+		    <mapvo name="string06"></mapvo>
+	  	</column>  
+	  	<column>
+		    <title name="COVERAGE_ID" />
+		    <db2column name="COVERAGE_ID" />
+		    <datatype name="String" maxLength="15" />
+		    <mapvo name="string07"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string08"></mapvo>
+	  	</column>     	  
+	</table>
+	<table name = "QBIS.COMPID_REFERENCE">
+		<column required="Y" pkey="Y">
+		    <title name="SDW_COMP_ID" />
+		    <db2column name="SDW_COMP_ID" />
+		    <datatype name="String" maxLength="8" ></datatype>
+		    <mapvo name="string01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="SERV_DESC" />
+		    <db2column name="SERV_DESC" />
+		    <datatype name="String" maxLength="60" />
+		    <mapvo name="string02"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="COMPID_CLASS" />
+		    <db2column name="COMPID_CLASS" />
+		    <datatype name="String" maxLength="20" />
+		    <mapvo name="string03"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="COMP_SUB_CLASS" />
+		    <db2column name="COMP_SUB_CLASS" />
+		    <datatype name="String" maxLength="20" />
+		    <mapvo name="string04"></mapvo>
+	  	</column>  	
+	  	<column>
+		    <title name="COMP_PRICING_CLASS" />
+		    <db2column name="COMP_PRICING_CLASS" />
+		    <datatype name="String" maxLength="20" />
+		    <mapvo name="string05"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string06"></mapvo>
+	  	</column>     	  
+	</table>
+	<table name = "QBIS.ALC_REFERENCE">
+		<column required="Y" pkey="Y">
+		    <title name="BASE_COMPID" />
+		    <db2column name="BASE_COMPID" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="ALC_COMPID" />
+		    <db2column name="ALC_COMPID" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string02"></mapvo>
+	  	</column>	  	
+	  	<column required="Y" pkey="Y">
+		    <title name="PROC_GRP" />
+		    <db2column name="PROC_GRP" />
+		    <datatype name="String" maxLength="3" />
+		    <mapvo name="string03"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="ALC_BASE_PRICE" />
+		    <db2column name="ALC_BASE_PRICE" />
+		    <datatype name="Decimal" />
+		    <mapvo name="decimal01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="ALC_SELECTION" />
+		    <db2column name="ALC_SELECTION" />
+		    <datatype name="String" maxLength="32" />
+		    <mapvo name="string04"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string05"></mapvo>
+	  	</column>     	
+	</table>
+	<table name = "QBIS.HW_CLASS">
+		<column required="Y" pkey="Y">
+		    <title name="MACH" />
+		    <db2column name="MACH" />
+		    <datatype name="String" maxLength="4" />
+		    <mapvo name="string01"></mapvo>
+		</column>
+	  	<column required="Y" pkey="Y">
+		    <title name="MODEL" />
+		    <db2column name="MODEL" />
+		    <datatype name="String" maxLength="3" />
+		    <mapvo name="string02"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="HW_CLASS" />
+		    <db2column name="HW_CLASS" />
+		    <datatype name="String" maxLength="12" />
+		    <mapvo name="string03"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string04"></mapvo>
+	  	</column>     	  	
+	</table>
+	<table name = "QBIS.UTILIZATION_HISTORY">
+		<column required="Y" pkey="Y">
+		    <title name="YEAR_YYYY" />
+		    <db2column name="YEAR_YYYY" />
+		    <datatype name="String" maxLength="4" />
+		    <mapvo name="string01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="YEAR_YY" />
+		    <db2column name="YEAR_YY" />
+		    <datatype name="String" maxLength="2" />
+		    <mapvo name="string02"></mapvo>
+	  	</column>	  	
+	  	<column required="Y" pkey="Y">
+		    <title name="PERIOD" />
+		    <db2column name="PERIOD" />
+		    <datatype name="String" maxLength="2" />
+		    <mapvo name="string03"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="CS_REGION" />
+		    <db2column name="CS_REGION" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string04"></mapvo>
+	  	</column>
+	  	<column required="Y" >
+		    <title name="REGION_GEO_CODE" />
+		    <db2column name="REGION_GEO_CODE" />
+		    <datatype name="String" maxLength="3"/>
+		    <mapvo name="string05"></mapvo>
+	  	</column>
+	  	<column required="Y" pkey="Y">
+		    <title name="EMP_DEPT" />
+		    <db2column name="EMP_DEPT" />
+		    <datatype name="String" maxLength="4"/>
+		    <mapvo name="string06"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="MGR_NO" />
+		    <db2column name="MGR_NO" />
+		    <datatype name="String" maxLength="6"/>
+		    <mapvo name="string07"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="MGR_NAME" />
+		    <db2column name="MGR_NAME" />
+		    <datatype name="String" maxLength="40" />
+		    <mapvo name="string08"></mapvo>
+	  	</column>
+	  	<column required="Y" pkey="Y">
+		    <title name="CSR_NO" />
+		    <db2column name="CSR_NO" />
+		    <datatype name="String" maxLength="6" />
+		    <mapvo name="string09"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="CSR_NAME" />
+		    <db2column name="CSR_NAME" />
+		    <datatype name="String" maxLength="40" />
+		    <mapvo name="string10"></mapvo>
+	  	</column>
+	  	<column required="Y" pkey="Y">
+		    <title name="CSRCARPTH" />
+		    <db2column name="CSRCARPTH" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string11"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="REPORT_STRT_DTE" />
+		    <db2column name="REPORT_STRT_DTE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="BILL_RECOVER_HRS" />
+		    <db2column name="BILL_RECOVER_HRS" />
+		    <datatype name="Decimal" />
+		    <mapvo name="decimal01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="OTHER_HRS" />
+		    <db2column name="OTHER_HRS" />
+		    <datatype name="Decimal" />
+		    <mapvo name="decimal02"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="REPORTED_HRS" />
+		    <db2column name="REPORTED_HRS" />
+		    <datatype name="Decimal" />
+		    <mapvo name="decimal03"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="EXPECTED_HRS" />
+		    <db2column name="EXPECTED_HRS" />
+		    <datatype name="Decimal" />
+		    <mapvo name="decimal04"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="REPORT_EXPECT_HRS" />
+		    <db2column name="REPORT_EXPECT_HRS" />
+		    <datatype name="Decimal" />
+		    <mapvo name="decimal05"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="UTILIZATION" />
+		    <db2column name="UTILIZATION" />
+		    <datatype name="Decimal" />
+		    <mapvo name="decimal06"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="REPORTED_FTE" />
+		    <db2column name="REPORTED_FTE" />
+		    <datatype name="Decimal" />
+		    <mapvo name="decimal07"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="CSRFLDMGR" />
+		    <db2column name="CSRFLDMGR" />
+		    <datatype name="String" maxLength="3" />
+		    <mapvo name="string12"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date03"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string13"></mapvo>
+	  	</column>     	
+	</table>
+	<table name = "QBIS.MTS_BRANCH_AREA">
+		<column required="Y" pkey="Y">
+		    <title name="BRANCH" />
+		    <db2column name="BRANCH" />
+		    <datatype name="String" maxLength="4" />
+		    <mapvo name="string01"></mapvo>
+		</column>
+	  	<column>
+		    <title name="MTS_AREA" />
+		    <db2column name="MTS_AREA" />
+		    <datatype name="String" maxLength="20" />
+		    <mapvo name="string02"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="SDM_REGION" />
+		    <db2column name="SDM_REGION" />
+		    <datatype name="String" maxLength="20" />
+		    <mapvo name="string03"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="BRANCH_NAME" />
+		    <db2column name="BRANCH_NAME" />
+		    <datatype name="String" maxLength="30" />
+		    <mapvo name="string04"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string05"></mapvo>
+	  	</column>     	   	
+	</table>
+	<table name = "QBIS.MTS_REG_GEO_AREA">
+		<column required="Y" pkey="Y">
+		    <title name="REGION_GEO_CDE" />
+		    <db2column name="REGION_GEO_CDE" />
+		    <datatype name="String" maxLength="3" />
+		    <mapvo name="string01"></mapvo>
+		</column>
+	  	<column>
+		    <title name="MTS_AREA" />
+		    <db2column name="MTS_AREA" />
+		    <datatype name="String" maxLength="20" />
+		    <mapvo name="string02"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="TEAM" />
+		    <db2column name="TEAM" />
+		    <datatype name="String" maxLength="20" />
+		    <mapvo name="string03"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string04"></mapvo>
+	  	</column>     	 	
+	</table>
+	<table name = "QBIS.SERVCODE_REF">
+		<column>
+		    <title name="BILLABLE_FLG" />
+		    <db2column name="BILLABLE_FLG" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string01"></mapvo>
+		</column>
+	  	<column>
+		    <title name="COMMENTS" />
+		    <db2column name="COMMENTS" />
+		    <datatype name="String" maxLength="80" />
+		    <mapvo name="string02"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="GROUP" />
+		    <db2column name="GROUP" />
+		    <datatype name="String" maxLength="30" />
+		    <mapvo name="string03"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="HQ_USE_01" />
+		    <db2column name="HQ_USE_01" />
+		    <datatype name="Integer"/>
+		    <mapvo name="integer01"></mapvo>
+	  	</column>
+	  	<column>
+		    <title name="HQ_USE_02" />
+		    <db2column name="HQ_USE_02" />
+		    <datatype name="String" maxLength="2"/>
+		    <mapvo name="string04" ></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="HQ_USE_03" />
+		    <db2column name="HQ_USE_03" />
+		    <datatype name="String" maxLength="2"/>
+		    <mapvo name="string05" ></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="IPAR_ACTCODE_IND" />
+		    <db2column name="IPAR_ACTCODE_IND" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string06"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="IPAR_FLG" />
+		    <db2column name="IPAR_FLG" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string07"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="PSAR_ACTCODE_IND" />
+		    <db2column name="PSAR_ACTCODE_IND" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string08"></mapvo>
+	  	</column> 	  	
+	  	<column>
+		    <title name="PSAR_FLG" />
+		    <db2column name="PSAR_FLG" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string09"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="QSAR_ACTCODE_IND" />
+		    <db2column name="QSAR_ACTCODE_IND" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string10"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="QSAR_FEED_FLG" />
+		    <db2column name="QSAR_FEED_FLG" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string11"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="QSAR_FLG" />
+		    <db2column name="QSAR_FLG" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string12"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="RECOVER_FLG" />
+		    <db2column name="RECOVER_FLG" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string13"></mapvo>
+	  	</column> 
+	  	<column>
+		    <title name="SC_ACTIVE" />
+		    <db2column name="SC_ACTIVE" />
+		    <datatype name="String" maxLength="3" />
+		    <mapvo name="string14"></mapvo>
+	  	</column> 
+	  	<column required="Y" pkey="Y">
+		    <title name="SERVCODE" />
+		    <db2column name="SERVCODE" />
+		    <datatype name="String" maxLength="2" />
+		    <mapvo name="string15"></mapvo>
+	  	</column>  	
+	  	<column>
+		    <title name="SERVCODE_DESC" />
+		    <db2column name="SERVCODE_DESC" />
+		    <datatype name="String" maxLength="80" />
+		    <mapvo name="string16"></mapvo>
+	  	</column>  	
+	  	<column>
+		    <title name="TYPE" />
+		    <db2column name="TYPE" />
+		    <datatype name="String" maxLength="30" />
+		    <mapvo name="string17"></mapvo>
+	  	</column>  	
+	  	<column>
+		    <title name="UTILIZED_FLG" />
+		    <db2column name="UTILIZED_FLG" />
+		    <datatype name="String" maxLength="1" />
+		    <mapvo name="string18"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="CREATED_DATE" />
+		    <db2column name="CREATED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="CREATED_TIME" />
+		    <db2column name="CREATED_TIME" />
+		    <datatype name="Timestamp"  />
+		    <mapvo name="timestamp01"></mapvo>
+	  	</column>  
+	  	<column editable="N">
+		    <title name="MODIFIED_DATE" />
+		    <db2column name="MODIFIED_DATE" />
+		    <datatype name="Date" />
+		    <mapvo name="date02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_TIME" />
+		    <db2column name="MODIFIED_TIME" />
+		    <datatype name="Timestamp" />
+		    <mapvo name="timestamp02"></mapvo>
+	  	</column>
+	  	<column editable="N">
+		    <title name="MODIFIED_BY" />
+		    <db2column name="MODIFIED_BY" />
+		    <datatype name="String" maxLength="8" />
+		    <mapvo name="string19"></mapvo>
+	  	</column>     	  	
+	</table>
+</tables>

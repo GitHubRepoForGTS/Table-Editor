@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="db2/db2jcc_license_cisuz.jar"/>
+	<classpathentry kind="lib" path="db2/db2jcc_license_cu.jar"/>
+	<classpathentry kind="lib" path="db2/db2jcc.jar"/>
+	<classpathentry kind="lib" path="clientos.jar"/>
+	<classpathentry kind="lib" path="commonos.jar"/>
+	<classpathentry kind="lib" path="jcalendar.jar"/>
+	<classpathentry kind="lib" path="jnlp.jar"/>
+	<classpathentry kind="lib" path="serveros.jar"/>
+	<classpathentry kind="lib" path="servlet-2.3.jar"/>
+	<classpathentry kind="lib" path="poi-2.0-RC2-20040102.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
